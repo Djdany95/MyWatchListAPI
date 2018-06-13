@@ -1,0 +1,44 @@
+{
+  "name": "mywatchlistsapi",
+  "version": "1.0.0",
+  "description": "API for my Angular Project MyWatchLists",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/djdany01/MyWatchListsAPI.git"
+  },
+  "keywords": [
+    "node",
+    "angular",
+    "api"
+  ],
+  "author": "djdany01",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/djdany01/MyWatchListsAPI/issues"
+  },
+  "homepage": "https://github.com/djdany01/MyWatchListsAPI#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.3",
+    "express-fileupload": "^0.4.0",
+    "fast-sha256": "^1.1.0",
+    "mongoose": "^5.0.14",
+    "nodemailer": "^4.6.4",
+    "uniqid": "^4.1.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.17.3"
+  },
+  "apidoc": {
+    "name": "MyWatchListAPI Docs",
+    "title": "MyWatchListAPI Docs",
+    "template": {
+      "withCompare": false
+    }
+  }
+}
