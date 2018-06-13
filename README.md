@@ -2,7 +2,7 @@
 
 ### API for my Angular Project MyWatchLists
 
-# [Documentation](apidoc/index.html).
+# [Documentation](https://djdany01.github.io/MyWatchListAPI/apidoc/index.html).
 
 ## License
 
