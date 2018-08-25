@@ -97,7 +97,7 @@ function register(req, res) {
         from: constants.email,
         to: seriesList.email,
         subject: 'MyWatchList Confirmation Email',
-        text: 'Confirm Email: https://mywatchlist.000webhostapp.com/confirmemail/' +
+        text: 'Confirm Email: https://mywatchlist.xyz/confirmemail/' +
             seriesList.confirmId
     };
 
