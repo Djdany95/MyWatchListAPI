@@ -95,29 +95,9 @@ function dropSeries(req, res) {
   });
 }
 
-function countSeries(req, res) {
-  var username = req.params.username;
-
-  SeriesList.aggregate([
-    { $match: { name: username } },
-    { $project: { _id: 0, nSeries: { $size: '$series' } } }
-  ]).exec((err, countSeries) => {
-    if (err) {
-      res
-        .status(500)
-        .send({ accion: 'count seriesList', error: 'Server Error 500' });
-    } else if (!countSeries[0]) {
-      res.status(404).send({ accion: 'count seriesList', error: 'User 404' });
-    } else {
-      res.status(200).send({ accion: 'count seriesList', data: countSeries });
-    }
-  });
-}
-
 module.exports = {
   getSeriesList,
   newSeries,
   updateSeries,
-  dropSeries,
-  countSeries
+  dropSeries
 };

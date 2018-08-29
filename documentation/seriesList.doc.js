@@ -38,45 +38,6 @@
  */
 
 /**
- * @api {get} /countSeries/:username CountSeries
- * @apiName CountSeries
- * @apiGroup SeriesList
- * @apiDescription Get series' count from user requested
- *
- * @apiParam {String} username User username.
- *
- * @apiSuccess {String} accion Action made.
- * @apiSuccess {JSON} data  User requested.
- *
- * @apiSuccessExample Success-Response:
- *     HTTP/1.1 200 OK
- *     {
- *       accion: "get user",
- *       data: countSeries{data}
- *     }
- *
- * @apiError accion Action made.
- * @apiError error  Error caught.
- *
- * @apiErrorExample User Not Found:
- *     HTTP/1.1 404 Not Found
- *     {
- *       accion: "get user",
- *       error: "User 404"
- *     }
- *
- * @apiError accion Action made.
- * @apiError error  Error caught.
- *
- * @apiErrorExample Error-Response:
- *     HTTP/1.1 500 Server Error
- *     {
- *       accion: "get user",
- *       error: "Server Error 500"
- *     }
- */
-
-/**
  * @api {post} /series/ NewSeries
  * @apiName NewSeries
  * @apiGroup SeriesList
