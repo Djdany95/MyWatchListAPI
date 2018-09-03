@@ -9,7 +9,6 @@ userRoutes.get('/user/:username/:email', UserController.findUser);
 userRoutes.get('/shareduser/:username', UserController.sharedUser);
 userRoutes.get('/confirmemail/:uniqId', UserController.confirmEmail);
 userRoutes.get('/remember/:email', UserController.rememberAuth);
-userRoutes.post('/masterUsers/', UserController.masterUsers);
 userRoutes.post('/login/', UserController.login);
 userRoutes.post('/register/', UserController.register);
 userRoutes.put('/changePass/', UserController.changePass);

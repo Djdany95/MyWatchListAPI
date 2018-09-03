@@ -1,6 +1,6 @@
 {
   "name": "mywatchlistsapi",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "API for my Angular Project MyWatchLists",
   "main": "index.js",
   "scripts": {
@@ -23,16 +23,15 @@
   },
   "homepage": "https://github.com/djdany01/MyWatchListsAPI#readme",
   "dependencies": {
-    "body-parser": "^1.18.2",
+    "body-parser": "^1.18.3",
     "express": "^4.16.3",
-    "express-fileupload": "^0.4.0",
     "fast-sha256": "^1.1.0",
-    "mongoose": "^5.0.14",
-    "nodemailer": "^4.6.4",
-    "uniqid": "^4.1.1"
+    "mongoose": "^5.2.12",
+    "nodemailer": "^4.6.8",
+    "uniqid": "^5.0.3"
   },
   "devDependencies": {
-    "nodemon": "^1.17.3"
+    "nodemon": "^1.18.4"
   },
   "apidoc": {
     "name": "MyWatchListAPI Docs",

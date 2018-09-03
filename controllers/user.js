@@ -1,10 +1,10 @@
 /* jshint node: true */
 /* jshint esversion: 6 */
 
-const SeriesList = require('../models/seriesList');
 const uniqid = require('uniqid');
 const nodemailer = require('nodemailer');
 const sha256 = require('fast-sha256');
+const SeriesList = require('../models/seriesList');
 const constants = require('../constants');
 
 const transporter = nodemailer.createTransport({
@@ -14,16 +14,6 @@ const transporter = nodemailer.createTransport({
         pass: constants.pass
     }
 });
-
-function masterUsers(req, res) {
-    if (req.body.masterKey === 'THEMASTER01062011') {
-        SeriesList.find({}, { __v: 0 }).exec((err, users) => {
-            res.status(200).send({ accion: 'get users', data: users });
-        });
-    } else {
-        res.status(500).send({ accion: 'get users', error: 'ACCESS DENIED' });
-    }
-}
 
 function findUser(req, res) {
     SeriesList.find({ $or: [{ name: req.params.username }, { email: req.params.email }] }, { _id: 0, series: 0, __v: 0, pass: 0 }).exec((err, user) => {
@@ -234,7 +224,6 @@ function deleteUser(req, res) {
 }
 
 module.exports = {
-    masterUsers,
     findUser,
     sharedUser,
     login,
