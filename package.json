@@ -24,9 +24,9 @@
   "homepage": "https://github.com/djdany01/MyWatchListsAPI#readme",
   "dependencies": {
     "body-parser": "^1.18.3",
-    "express": "^4.16.3",
+    "express": "^4.16.4",
     "fast-sha256": "^1.1.0",
-    "mongoose": "^5.2.17",
+    "mongoose": "^5.3.3",
     "nodemailer": "^4.6.8",
     "uniqid": "^5.0.3"
   },
